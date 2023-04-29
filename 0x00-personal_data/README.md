@@ -73,3 +73,20 @@ phone
 ssn
 password
 Only your main function should run when the module is executed.
+
+### encrypt_password.py
+
+User passwords should NEVER be stored in plain text in a database.
+
+Implement a hash_password function that expects one string argument name password and returns a salted, hashed password, which is a byte string.
+
+Use the bcrypt package to perform the hashing (with hashpw).
+---------------------------------------------------------------------------------------------------------------------
+Implement an is_valid function that expects 2 arguments and returns a boolean.
+
+Arguments:
+
+hashed_password: bytes type
+password: string type
+Use bcrypt to validate that the provided password matches the hashed password.
+--------------------------------------------------------------------------------------------------------------------
