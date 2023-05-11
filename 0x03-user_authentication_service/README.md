@@ -66,4 +66,10 @@ The method will use find_user_by to locate the user to update, then will update 
 
 If an argument that does not correspond to a user attribute is passed, raise a ValueError.
 
+### auth.py
+
+In this task you will define a _hash_password method that takes in a password string arguments and returns bytes.
+
+The returned bytes is a salted hash of the input password, hashed with bcrypt.hashpw.
+
 
